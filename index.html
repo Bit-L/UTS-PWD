@@ -2,116 +2,70 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Form Pendaftaran</title>
+    <title>Cabang Olahraga</title>
     <style>
-        body {
-            background-color: yellow;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
             font-family: Arial, sans-serif;
-            margin: 20px;
         }
-        .header-container {
+        th, td {
+            border: 1px solid rgb(68, 68, 68);
+            padding: 8px;
             text-align: center;
-            margin-bottom: 5px;
+        }
+        th {
+            font-weight: bold;
         }
         .header {
-            color: blue;
-            font-size: 24px;
-            margin: 5px 0;
-        }
-        .logo {
-            display: block;
-            margin: 10px auto;
-            width: 80px; /* Sesuaikan ukuran logo */
-            height: auto;
-        }
-        .address {
-            text-align: right;
-            color: red;
-            font-size: 18px;
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-        }
-        .address span {
-            display: inline-block;
-            animation: slideLeft 10s linear infinite;
-        }
-        @keyframes slideLeft {
-            from { transform: translateX(100%); }
-            to   { transform: translateX(-500%); }
-        }
-        hr {
-            height: 5px;
-            background-color: black;
-            border: none;
-            margin: 20px 0;
-        }
-        table {
-            width: 100%;
-            max-width: 400px;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-        td {
-            padding: 5px;
-            border: 1px solid black;
-        }
-        .button-container {
             text-align: center;
-            margin: 20px 0;
-        }
-        button {
-            padding: 8px 16px;
-            font-size: 14px;
-        }
-        .list-title {
             font-weight: bold;
-            margin-top: 20px;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
-    <!-- Header dan Logo -->
-    <div class="header-container">
-        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/8/8f/Logo_Universitas_Indraprasta_PGRI_%28UNINDRA%29.png/250px-Logo_Universitas_Indraprasta_PGRI_%28UNINDRA%29.png" alt="Logo UNINDRA" class="logo">
-        <div class="header">UNIVERSITAS INDRAPRASTA PGRI (UNINDRA)</div>
-    </div>
-
-    <div class="address">
-        <span>Jl. Nangka No.58 Tanjung Barat-JakSel</span>
-    </div>
-
-    <hr>
-
+    <div class="header">CABANG OLAHRAGA</div>
     <table>
-        <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>Kemal Faizurrahman</td>
-        </tr>
-        <tr>
-            <td>NPM</td>
-            <td>:</td>
-            <td>202433500297</td>
-        </tr>
+        <thead>
+            <tr>
+                <th rowspan="2">PROPINSI</th>
+                <th colspan="3">MEDALI</th>
+            </tr>
+            <tr>
+                <th>EMAS</th>
+                <th>PERAK</th>
+                <th>PERUNGGU</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DKI JAKARTA</td>
+                <td>25</td>
+                <td>12</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>JAWA BARAT</td>
+                <td>15</td>
+                <td>26</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>JAWA TIMUR</td>
+                <td>14</td>
+                <td>20</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>JAWA TENGAH</td>
+                <td>13</td>
+                <td>30</td>
+                <td>19</td>
+            </tr>
+        </tbody>
     </table>
-
-    <div class="list-title">FTIK:</div>
-    <ol type="A">
-        <li>Informatika</li>
-        <li>Teknik Arsitektur</li>
-        <li>Teknik Industri</li>
-    </ol>
-
-    <div class="list-title">MIPA:</div>
-    <ol type="I">
-        <li>Matematika</li>
-        <li>Fisika</li>
-        <li>Biologi</li>
-    </ol>
-
-    <div class="button-container">
-        <button>SIMPAN</button>
-    </div>
 </body>
 </html>
